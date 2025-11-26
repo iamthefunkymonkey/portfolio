@@ -1,45 +1,68 @@
 <html>
 <head>
     <title>funkymonkey's portfolio</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            flex-direction: column; 
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .projects {
+            width: 450px;
+            height: 300px;
+            overflow-y: scroll;
+            border: 2px solid #646363;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: small;
+        }
+
+        video {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <p style="text-align: center; font-size: x-large; font-family: Arial;">
-        funkymonkey's portfolio
-    </p>
+    <p style="font-size: x-large;">funkymonkey's portfolio</p>
 
     <img src="assets/peter.png" width="50px" height="50px">
 
-    <p style="font-size: small; font-family: Arial;">my youtube link:</p>
+    <p>my youtube link:</p>
 
     <a href="https://www.youtube.com/@iamthefunkymonkey">
-        <p style="font-size: small; font-family: Arial;">
-            https://www.youtube.com/@iamthefunkymonkey
-        </p>
+        https://www.youtube.com/@iamthefunkymonkey
     </a>
 
-   <p style="position: relative; top: 30px; font-family: Arial;"> projects: </p> 
-    <div style="width: 450px; height: 300px; overflow-y: scroll; border: 2px solid #646363; padding: 10px; position: relative; top: 30px;">
+    <p style="font-size: large; font-style: italic;"> projects</p>
 
-        <p style="font-size: medium; font-family: Arial; text-align: center;">
-            Character Customizer:
-        </p>
-
+    <div class="projects">
+        <p>Character Customizer:</p>
         <video width="450" height="275" controls>
             <source src="assets/charactercustomizer.mp4" type="video/mp4">
         </video>
 
-            <p style="font-size: medium; font-family: Arial; text-align: center;">
-            Gun System:
-        </p>
-
+        <p>Gun System:</p>
         <video width="450" height="275" controls>
             <source src="assets/gun system.mp4" type="video/mp4">
         </video>
-
     </div>
 
 </body>
-
 </html>
